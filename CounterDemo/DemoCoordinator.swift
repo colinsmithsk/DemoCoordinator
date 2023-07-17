@@ -16,34 +16,21 @@ enum State {
     
 }
 
+@MainActor
 class DemoCoordinator: ObservableObject {
     
-    @Published var value: State
+    @Published var value: State = .value(0)
     
-    init(startingValue: State) {
-        self.value = startingValue
-    }
-     
-    
-    func addValue() async {
-        
-        switch self.value {
-        case .pending:
-            break //shouldn't be winding up here
-        case .value(let count):
-            DispatchQueue.main.async {
-                self.value = .pending
+    func addValue() {
+        Task {
+            switch value {
+            case .pending:
+                break //shouldn't be winding up here
+            case .value(let count):
+                value = .pending
+                try await Task.sleep(nanoseconds: 2000000000)
+                value = .value(count + 1)
             }
-            sleep(2)
-            DispatchQueue.main.async {
-                self.value = .value(count + 1)
-            }
-
         }
-        
-        
-        
     }
-    
-    
 }

@@ -15,14 +15,11 @@ struct DemoView: View {
             switch coordinator.value {
             case .pending:
                 ProgressView()
-                    
             case .value(let count):
                 Text("\(count)")
                     .font(.largeTitle)
                 Button {
-                    Task{
-                       await coordinator.addValue()
-                    }
+                    coordinator.addValue()
                 } label: {
                     Text("Increment Value")
                 }
@@ -33,6 +30,6 @@ struct DemoView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DemoView(coordinator: DemoCoordinator(startingValue: .value(0)))
+        DemoView(coordinator: DemoCoordinator())
     }
 }

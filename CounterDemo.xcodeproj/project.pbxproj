@@ -15,6 +15,7 @@
 		976E2F722A588ED8004D089F /* CounterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E2F712A588ED8004D089F /* CounterDemoUITests.swift */; };
 		976E2F742A588ED8004D089F /* CounterDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E2F732A588ED8004D089F /* CounterDemoUITestsLaunchTests.swift */; };
 		976E2F832A589112004D089F /* DemoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E2F822A589112004D089F /* DemoCoordinator.swift */; };
+		976E2F872A65D229004D089F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E2F862A65D229004D089F /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		976E2F712A588ED8004D089F /* CounterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDemoUITests.swift; sourceTree = "<group>"; };
 		976E2F732A588ED8004D089F /* CounterDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		976E2F822A589112004D089F /* DemoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCoordinator.swift; sourceTree = "<group>"; };
+		976E2F862A65D229004D089F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				976E2F5B2A588ED8004D089F /* CounterDemo.entitlements */,
 				976E2F5C2A588ED8004D089F /* Preview Content */,
 				976E2F822A589112004D089F /* DemoCoordinator.swift */,
+				976E2F862A65D229004D089F /* NetworkService.swift */,
 			);
 			path = CounterDemo;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				976E2F582A588ED8004D089F /* DemoView.swift in Sources */,
 				976E2F832A589112004D089F /* DemoCoordinator.swift in Sources */,
+				976E2F872A65D229004D089F /* NetworkService.swift in Sources */,
 				976E2F562A588ED8004D089F /* CounterDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

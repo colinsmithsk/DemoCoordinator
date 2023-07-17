@@ -9,10 +9,9 @@ import SwiftUI
 
 @main
 struct CounterDemoApp: App {
-    let demoCoordinator = DemoCoordinator(startingValue: .value(0))
     var body: some Scene {
         WindowGroup {
-            DemoView(coordinator: demoCoordinator)
+            DemoView(coordinator: DemoCoordinator())
         }
     }
 }
